@@ -1,0 +1,123 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Apr 01 14:20:44 2017
+# Process ID: 13308
+# Current directory: C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14592 C:\Users\Michael\OneDrive\EE2020\Lab\Proj 30 Mar\EE2020_myDAC.xpr
+# Log file: C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/vivado.log
+# Journal file: C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.xpr}
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close [ open {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.srcs/sources_1/new/am_gen.v} w ]
+add_files {{C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.srcs/sources_1/new/am_gen.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close [ open {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.srcs/sources_1/new/arb_gen.v} w ]
+add_files {{C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.srcs/sources_1/new/arb_gen.v}}
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/EE2020_myDAC.runs/impl_1/myDAC_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+archive_project C:/Users/Michael/OneDrive/EE2020/Lab/EE2020_myDAC_FINAL.xpr.zip -temp_dir {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/.Xil/Vivado-13308-Michael-PC} -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+archive_project C:/Users/Michael/OneDrive/EE2020/Lab/EE2020_myDAC_FINALFINAL.xpr.zip -temp_dir {C:/Users/Michael/OneDrive/EE2020/Lab/Proj 30 Mar/.Xil/Vivado-13308-Michael-PC} -force

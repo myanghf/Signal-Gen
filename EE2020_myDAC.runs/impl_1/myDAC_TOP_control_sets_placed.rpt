@@ -1,0 +1,103 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Apr 01 16:42:58 2017
+| Host         : Michael-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file myDAC_TOP_control_sets_placed.rpt
+| Design       : myDAC_TOP
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    50 |
+| Unused register locations in slices containing registers |   184 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             519 |          220 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             309 |           90 |
+| Yes          | No                    | No                     |             117 |           52 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             103 |           43 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+----------------------------------+------------------------------+------------------+----------------+
+|          Clock Signal         |           Enable Signal          |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-------------------------------+----------------------------------+------------------------------+------------------+----------------+
+|  clk1/clock1                  |                                  |                              |                1 |              1 |
+|  CLOCKA/clk_counter_reg[0]    |                                  |                              |                1 |              1 |
+|  getFreq/dpStoreA_reg         |                                  | getFreq/dpStoreA_reg_1       |                1 |              1 |
+|  getFreq/dpStoreB_reg         |                                  | getFreq/dpStoreB_reg_1       |                1 |              1 |
+|  clockVARSINA_BUFG            |                                  |                              |                1 |              1 |
+|  clockVARSINB_BUFG            |                                  |                              |                1 |              1 |
+|  JA_OBUF_BUFG[3]              |                                  |                              |                1 |              2 |
+|  JA_OBUF_BUFG[3]              | u1/shiftCounter[3]_i_2_n_0       | u1/shiftCounter[3]_i_1_n_0   |                1 |              4 |
+|  clock40_BUFG                 | selSignal/E[0]                   |                              |                4 |              5 |
+|  JA_OBUF_BUFG[3]              | u1/temp2                         | u1/shiftCounter[3]_i_1_n_0   |                2 |              5 |
+|  clock40_BUFG                 | selSignal/ledA_reg[4]_0[0]       |                              |                2 |              5 |
+|  clockVARTRIB_BUFG            |                                  | TRIANGLEB/COUNT[6]_i_1_n_0   |                3 |              6 |
+|  clock40_BUFG                 | adjDCycle/dc_flagB               | DB5/pc1/dc_flagB_reg[5]_0[0] |                2 |              7 |
+|  SAMP_CLOCK_BUFG              |                                  | selDisplay/seg[5]_i_1_n_0    |                3 |              7 |
+|  clock40_BUFG                 | adjDCycle/dc_flagA               | DB5/pc1/dc_flagA_reg[5][0]   |                2 |              7 |
+|  SAMP_CLOCK_BUFG              |                                  |                              |                6 |              7 |
+|  clock40_BUFG                 | selStep/step_n_0                 |                              |                3 |             11 |
+|  CLOCKA/CLK                   |                                  |                              |                8 |             12 |
+|  CLOCKA/CLK                   |                                  | SQUAREA/COUNT[11]_i_1__0_n_0 |                4 |             12 |
+|  CLOCKA/clk_counter_reg[0]    | selSignal/Atemp[11]_i_1_n_0      |                              |                6 |             12 |
+|  CLOCKA/clk_counter_reg[0]    | selSignal/Btemp[11]_i_1_n_0      |                              |                6 |             12 |
+|  CLOCKB/CLK                   |                                  | SQUAREB/COUNT[11]_i_1_n_0    |                4 |             12 |
+|  selSignal/Atemp_reg[10]_0[0] |                                  |                              |                6 |             12 |
+|  selSignal/Atemp_reg[10]_1[0] |                                  |                              |                5 |             12 |
+|  clock40_BUFG                 | moveStep/VmaxB[11]_i_1_n_0       | DB5/pc1/minVolt2[0]          |                8 |             12 |
+|  CLOCKB/CLK                   |                                  |                              |                7 |             12 |
+|  clock40_BUFG                 | moveStep/E[0]                    | DB5/pc1/minVolt2[0]          |                6 |             12 |
+|  clock40_BUFG                 | moveStep/VmaxA[11]_i_1_n_0       | DB5/pc1/SS[0]                |                9 |             12 |
+|  clockVARSINA_BUFG            | SINEA/waveSintemp[11]_i_1__0_n_0 |                              |                5 |             12 |
+|  clock40_BUFG                 | moveStep/VminA_reg[11]_1[0]      | DB5/pc1/SS[0]                |                5 |             12 |
+|  clockVARSINB_BUFG            | SINEB/waveSintemp[11]_i_1_n_0    |                              |                5 |             12 |
+|  clock40_BUFG                 | DB2/pc1/E[0]                     | DB5/pc1/freq_tempA_reg[0][0] |                4 |             16 |
+|  clock40_BUFG                 | DB2/pc1/freq_tempB_reg[15][0]    | DB5/pc1/SR[0]                |                4 |             16 |
+|  CLK_IBUF_BUFG                |                                  | CLOCKA/COUNT5[18]_i_1_n_0    |                5 |             18 |
+|  CLK_IBUF_BUFG                |                                  | CLOCKA/COUNT4[18]_i_1_n_0    |                5 |             18 |
+|  CLK_IBUF_BUFG                |                                  | CLOCKA/COUNT3[18]_i_1_n_0    |                5 |             18 |
+|  CLK_IBUF_BUFG                |                                  | CLOCKA/clear                 |                5 |             19 |
+|  CLK_IBUF_BUFG                |                                  | CLOCKA/COUNT20_carry__0_n_1  |                5 |             19 |
+|  CLK_IBUF_BUFG                |                                  | CLOCKB/COUNT20_carry__0_n_1  |                5 |             19 |
+|  CLK_IBUF_BUFG                |                                  | CLOCKB/clear                 |                5 |             19 |
+|  SAMP_CLOCK_BUFG              | selDisplay/segStoreA             |                              |               12 |             22 |
+|  JA_OBUF_BUFG[3]              | u1/temp2                         |                              |               10 |             28 |
+|  clockVARSINA_BUFG            |                                  | SINEA/COUNT[31]_i_1__0_n_0   |                8 |             31 |
+|  clockVARSINB_BUFG            |                                  | SINEB/COUNT[31]_i_1_n_0      |                8 |             31 |
+|  clock40_BUFG                 |                                  |                              |               23 |             32 |
+|  clockVARTRIB_BUFG            |                                  |                              |               28 |             38 |
+|  clockVARSINA_BUFG            |                                  | SINEA/i[31]_i_1__0_n_0       |               12 |             39 |
+|  clockVARSINB_BUFG            |                                  | SINEB/i[31]_i_1_n_0          |               11 |             39 |
+|  clockVARTRIA_BUFG            |                                  |                              |               31 |             44 |
+|  CLK_IBUF_BUFG                |                                  |                              |              101 |            344 |
++-------------------------------+----------------------------------+------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,644 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Mar 19 22:01:58 2017
+# Process ID: 3772
+# Current directory: F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.runs/synth_1
+# Command line: vivado.exe -log myDAC_TOP.vds -mode batch -messageDb vivado.pb -notrace -source myDAC_TOP.tcl
+# Log file: F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.runs/synth_1/myDAC_TOP.vds
+# Journal file: F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source myDAC_TOP.tcl -notrace
+Command: synth_design -top myDAC_TOP -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6916 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 273.859 ; gain = 65.594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'myDAC_TOP' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:3]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'get_count_sq' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/get_count.v:23]
+INFO: [Synth 8-256] done synthesizing module 'get_count_sq' (2#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/get_count.v:23]
+INFO: [Synth 8-638] synthesizing module 'get_count_tri' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/get_count_tri.v:23]
+INFO: [Synth 8-256] done synthesizing module 'get_count_tri' (3#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/get_count_tri.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'user_freq' does not match port width (13) of module 'get_count_tri' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:32]
+INFO: [Synth 8-638] synthesizing module 'frequency_selector' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/frequency_selector.v:23]
+INFO: [Synth 8-256] done synthesizing module 'frequency_selector' (4#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/frequency_selector.v:23]
+INFO: [Synth 8-638] synthesizing module 'single_pulse' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/single_pulse.v:23]
+INFO: [Synth 8-638] synthesizing module 'dff' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-256] done synthesizing module 'dff' (5#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-256] done synthesizing module 'single_pulse' (6#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/single_pulse.v:23]
+INFO: [Synth 8-638] synthesizing module 'step_selector' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/step_sel.v:23]
+INFO: [Synth 8-256] done synthesizing module 'step_selector' (7#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/step_sel.v:23]
+INFO: [Synth 8-638] synthesizing module 'step_calc' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/step_calc.v:23]
+INFO: [Synth 8-256] done synthesizing module 'step_calc' (8#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/step_calc.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'boundary_sel' does not match port width (12) of module 'step_calc' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:44]
+INFO: [Synth 8-638] synthesizing module 'duty_cycle_control' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/duty_cycle_control.v:23]
+INFO: [Synth 8-256] done synthesizing module 'duty_cycle_control' (9#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/duty_cycle_control.v:23]
+INFO: [Synth 8-638] synthesizing module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/sevenseg.v:23]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sevenseg' (10#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/sevenseg.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'in3' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:57]
+WARNING: [Synth 8-689] width (32) of port connection 'in2' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:57]
+WARNING: [Synth 8-689] width (32) of port connection 'in1' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:57]
+WARNING: [Synth 8-689] width (32) of port connection 'in0' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:57]
+WARNING: [Synth 8-689] width (1) of port connection 'dp' does not match port width (7) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:57]
+WARNING: [Synth 8-689] width (32) of port connection 'in3' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:58]
+WARNING: [Synth 8-689] width (32) of port connection 'in2' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:58]
+WARNING: [Synth 8-689] width (32) of port connection 'in1' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:58]
+WARNING: [Synth 8-689] width (32) of port connection 'in0' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:58]
+WARNING: [Synth 8-689] width (1) of port connection 'dp' does not match port width (7) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:58]
+WARNING: [Synth 8-689] width (32) of port connection 'in3' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:59]
+WARNING: [Synth 8-689] width (32) of port connection 'in2' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:59]
+WARNING: [Synth 8-689] width (32) of port connection 'in1' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:59]
+WARNING: [Synth 8-689] width (32) of port connection 'in0' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:59]
+WARNING: [Synth 8-689] width (1) of port connection 'dp' does not match port width (7) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:59]
+WARNING: [Synth 8-689] width (32) of port connection 'in3' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:60]
+WARNING: [Synth 8-689] width (32) of port connection 'in2' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:60]
+WARNING: [Synth 8-689] width (32) of port connection 'in1' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:60]
+WARNING: [Synth 8-689] width (32) of port connection 'in0' does not match port width (4) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:60]
+WARNING: [Synth 8-689] width (1) of port connection 'dp' does not match port width (7) of module 'sevenseg' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:60]
+INFO: [Synth 8-638] synthesizing module 'display_selector' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/display_selector.v:23]
+INFO: [Synth 8-256] done synthesizing module 'display_selector' (11#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/display_selector.v:23]
+INFO: [Synth 8-638] synthesizing module 'dc_gen' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/dc_gen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'dc_gen' (12#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/dc_gen.v:23]
+INFO: [Synth 8-638] synthesizing module 'square_gen' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/square_gen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'square_gen' (13#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/square_gen.v:23]
+INFO: [Synth 8-638] synthesizing module 'triangle_gen' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/triangle_gen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'triangle_gen' (14#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/triangle_gen.v:23]
+INFO: [Synth 8-638] synthesizing module 'saw_gen' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/saw_gen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'saw_gen' (15#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/saw_gen.v:23]
+INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/imports/SourceFiles/DA2RefComp.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (16#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/imports/SourceFiles/DA2RefComp.vhd:61]
+WARNING: [Synth 8-3848] Net ledBlink in module/entity myDAC_TOP does not have driver. [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:9]
+WARNING: [Synth 8-3848] Net RESET in module/entity myDAC_TOP does not have driver. [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:91]
+INFO: [Synth 8-256] done synthesizing module 'myDAC_TOP' (17#1) [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:3]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmax[11]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmax[10]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmax[9]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmax[8]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmax[7]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmax[6]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmax[5]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmax[4]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmax[3]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmax[2]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmax[1]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmax[0]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmin[11]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmin[10]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmin[9]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmin[8]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmin[7]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmin[6]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmin[5]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmin[4]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmin[3]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmin[2]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmin[1]
+WARNING: [Synth 8-3331] design saw_gen has unconnected port Vmin[0]
+WARNING: [Synth 8-3331] design myDAC_TOP has unconnected port ledBlink
+WARNING: [Synth 8-3331] design myDAC_TOP has unconnected port freq_count
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 311.199 ; gain = 102.934
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u1:RST to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+WARNING: [Synth 8-3295] tying undriven pin u1:DATA2[11] to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+WARNING: [Synth 8-3295] tying undriven pin u1:DATA2[10] to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+WARNING: [Synth 8-3295] tying undriven pin u1:DATA2[9] to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+WARNING: [Synth 8-3295] tying undriven pin u1:DATA2[8] to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+WARNING: [Synth 8-3295] tying undriven pin u1:DATA2[7] to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+WARNING: [Synth 8-3295] tying undriven pin u1:DATA2[6] to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+WARNING: [Synth 8-3295] tying undriven pin u1:DATA2[5] to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+WARNING: [Synth 8-3295] tying undriven pin u1:DATA2[4] to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+WARNING: [Synth 8-3295] tying undriven pin u1:DATA2[3] to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+WARNING: [Synth 8-3295] tying undriven pin u1:DATA2[2] to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+WARNING: [Synth 8-3295] tying undriven pin u1:DATA2[1] to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+WARNING: [Synth 8-3295] tying undriven pin u1:DATA2[0] to constant 0 [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:85]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 311.199 ; gain = 102.934
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/constrs_1/imports/_solution_files/Basys3_Master.xdc]
+Finished Parsing XDC File [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/constrs_1/imports/_solution_files/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/constrs_1/imports/_solution_files/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/myDAC_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/myDAC_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 601.457 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 601.457 ; gain = 393.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 601.457 ; gain = 393.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 601.457 ; gain = 393.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/frequency_selector.v:32]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/step_calc.v:34]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/step_calc.v:39]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/duty_cycle_control.v:32]
+INFO: [Synth 8-5587] ROM size for "sseg_temp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [F:/OneDrive/EE2020/Lab/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/triangle_gen.v:35]
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DA2RefComp'
+INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                shiftout |                               01 |                               01
+                syncdata |                               10 |                               10
+                  iSTATE |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 601.457 ; gain = 393.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 5     
+	               11 Bit    Registers := 1     
+	                7 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 6     
+	   2 Input     11 Bit        Muxes := 2     
+	   6 Input     11 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 6     
+	  11 Input      7 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module myDAC_TOP 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module frequency_selector 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module step_selector 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   6 Input     11 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+Module step_calc 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module duty_cycle_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sevenseg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+Module display_selector 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module square_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+Module triangle_gen 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module saw_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module DA2RefComp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 601.457 ; gain = 393.191
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design myDAC_TOP has unconnected port ledBlink
+WARNING: [Synth 8-3331] design myDAC_TOP has unconnected port freq_count
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 601.457 ; gain = 393.191
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 601.457 ; gain = 393.191
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'selStep/step_reg[8]' (FDE) to 'selStep/step_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\selDisplay/dpStore_reg )
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[0]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[1]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[2]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[3]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[4]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[5]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[6]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[7]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[8]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[9]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[10]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[11]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[12]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[13]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[14]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[15]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[16]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[17]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[18]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[19]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[20]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[21]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[22]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[23]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/COUNT_reg[24]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (CLKVARSAW/clockOut_reg) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (selStep/step_reg[8]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (selDisplay/dpStore_reg) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/direction_reg) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/tri_temp_reg[0]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/tri_temp_reg[1]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/tri_temp_reg[2]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/tri_temp_reg[3]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/tri_temp_reg[4]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/tri_temp_reg[5]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/tri_temp_reg[6]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/tri_temp_reg[7]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/tri_temp_reg[8]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/tri_temp_reg[9]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/tri_temp_reg[10]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (TRIANGLE/tri_temp_reg[11]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[1]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[2]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[3]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[4]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[5]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[6]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[7]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[8]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[9]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[10]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[11]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[12]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[13]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[14]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[15]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[16]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[17]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[18]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[19]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[20]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[21]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[22]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[23]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[24]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[25]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[26]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/clk_counter_reg[27]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (DB5/pc1/Q_reg) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (DB5/pc2/Q_reg) is unused and will be removed from module myDAC_TOP.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 601.457 ; gain = 393.191
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 601.457 ; gain = 393.191
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 601.457 ; gain = 393.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 679.469 ; gain = 471.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[11]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[10]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[9]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[8]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[7]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[6]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[5]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[4]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[3]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[2]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[1]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[0]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[15]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[14]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[13]) is unused and will be removed from module myDAC_TOP.
+WARNING: [Synth 8-3332] Sequential element (u1/temp2_reg[12]) is unused and will be removed from module myDAC_TOP.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 679.469 ; gain = 471.203
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 679.469 ; gain = 471.203
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 679.469 ; gain = 471.203
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 679.469 ; gain = 471.203
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 679.469 ; gain = 471.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 679.469 ; gain = 471.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 679.469 ; gain = 471.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 679.469 ; gain = 471.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 679.469 ; gain = 471.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   169|
+|3     |LUT1   |   211|
+|4     |LUT2   |   179|
+|5     |LUT3   |   209|
+|6     |LUT4   |   131|
+|7     |LUT5   |   213|
+|8     |LUT6   |   302|
+|9     |MUXF7  |    44|
+|10    |MUXF8  |     4|
+|11    |FDRE   |   302|
+|12    |IBUF   |    14|
+|13    |OBUF   |    16|
+|14    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+-------------------+------+
+|      |Instance        |Module             |Cells |
++------+----------------+-------------------+------+
+|1     |top             |                   |  1797|
+|2     |  CLK40         |clock_divider      |    71|
+|3     |  CLKHALF       |clock_divider_0    |    71|
+|4     |  CLKSAMP       |clock_divider_1    |    71|
+|5     |  CLKVARSQ      |clock_divider_2    |    73|
+|6     |  DB1           |single_pulse       |     4|
+|7     |    pc1         |dff_14             |     3|
+|8     |    pc2         |dff_15             |     1|
+|9     |  DB2           |single_pulse_3     |    30|
+|10    |    pc1         |dff_12             |    13|
+|11    |    pc2         |dff_13             |    17|
+|12    |  DB3           |single_pulse_4     |     3|
+|13    |    pc1         |dff_10             |     1|
+|14    |    pc2         |dff_11             |     2|
+|15    |  DB4           |single_pulse_5     |     5|
+|16    |    pc1         |dff                |     2|
+|17    |    pc2         |dff_9              |     3|
+|18    |  SQUARE        |square_gen         |    54|
+|19    |  adjDCycle     |duty_cycle_control |    88|
+|20    |  displayDCycle |sevenseg           |    45|
+|21    |  displayFreq   |sevenseg_6         |    41|
+|22    |  displayMax    |sevenseg_7         |    50|
+|23    |  displayMin    |sevenseg_8         |    44|
+|24    |  getCountSq    |get_count_sq       |     5|
+|25    |  getFreq       |frequency_selector |   251|
+|26    |  moveStep      |step_calc          |   478|
+|27    |  selDisplay    |display_selector   |   275|
+|28    |  selStep       |step_selector      |    22|
+|29    |  u1            |DA2RefComp         |    48|
++------+----------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 679.469 ; gain = 471.203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 88 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 679.469 ; gain = 180.945
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 679.469 ; gain = 471.203
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 183 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 151 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 679.469 ; gain = 471.203
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 679.469 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 19 22:02:41 2017...
